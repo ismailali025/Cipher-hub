@@ -110,3 +110,47 @@
         .prose a { color: var(--text-link); }
         .prose p, .prose li { line-height: 1.7; }
         .prose dt { color: var(--text-headings); }
+
+        /* ... all your existing styles ... */
+
+
+/* ================================================== */
+/* ============= START: FOOTER STYLES =============== */
+/* ================================================== */
+.app-footer {
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-primary);
+    color: var(--text-secondary);
+}
+
+.footer-heading {
+    font-size: 1.125rem; /* 18px */
+    font-weight: 600;
+    color: var(--text-headings);
+}
+
+.footer-text {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.5;
+}
+
+.footer-link {
+    font-size: 0.875rem; /* 14px */
+    color: var(--text-secondary);
+    transition: color 0.2s ease-in-out;
+    border-bottom: none !important; /* Override nav-link styles */
+    padding-bottom: 0 !important;
+}
+
+.footer-link:hover {
+    color: var(--text-link-hover);
+}
+
+.footer-icon {
+    color: var(--text-secondary);
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-icon:hover {
+    color: var(--text-headings);
+}
