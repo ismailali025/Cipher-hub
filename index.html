@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cipher Hub - Professional File Encryption</title>
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='logoIconGradient' x1='0' y1='2' x2='24' y2='22' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2360a5fa'/%3E%3Cstop offset='1' stop-color='%2334d399'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M12 2L4 5.45V12.18C4 16.14 7.21 19.88 12 21.5C16.79 19.88 20 16.14 20 12.18V5.45L12 2Z' fill='url(%23logoIconGradient)'/%3E%3Cpath d='M14.5 14H12.5V17H9.5V11C9.5 9.34 10.84 8 12.5 8C14.16 8 15.5 9.34 15.5 11V12.5H12.5V11C12.5 10.17 11.83 9.5 11 9.5C10.17 9.5 9.5 10.17 9.5 11V12.5H14.5V14Z' fill='%23030712'/%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+    <div class="background-animation"></div>
+
+    <!-- Header Navigation -->
+    <header class="app-header">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#home" class="nav-link flex-shrink-0 flex items-center space-x-3" style="border-bottom: none; padding-bottom: 0;">
+                        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="logoIconGradient" x1="0" y1="2" x2="24" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#60a5fa"/><stop offset="1" stop-color="#34d399"/></linearGradient></defs><path d="M12 2L4 5.45V12.18C4 16.14 7.21 19.88 12 21.5C16.79 19.88 20 16.14 20 12.18V5.45L12 2Z" fill="url(#logoIconGradient)"/><path d="M14.5 14H12.5V17H9.5V11C9.5 9.34 10.84 8 12.5 8C14.16 8 15.5 9.34 15.5 11V12.5H12.5V11C12.5 10.17 11.83 9.5 11 9.5C10.17 9.5 9.5 10.17 9.5 11V12.5H14.5V14Z" fill="#030712"/></svg>
+                        <span class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Cipher Hub</span>
+                    </a>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#home" class="nav-link px-3 py-2 text-sm font-medium">Home</a>
+                            <a href="#dashboard" class="nav-link px-3 py-2 text-sm font-medium">Dashboard</a>
+                            <a href="#about" class="nav-link px-3 py-2 text-sm font-medium">About</a>
+                            <a href="#stats" class="nav-link px-3 py-2 text-sm font-medium">Usage Stats</a>
+                            <a href="#contact" class="nav-link px-3 py-2 text-sm font-medium">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <button id="theme-toggle" class="p-2 rounded-full hover:text-white focus:outline-none"><svg id="theme-icon-light" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg><svg id="theme-icon-dark" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="content-area">
+        <!-- Page: Home -->
+        <section id="page-home" class="page fade-in">
+            <div class="text-center py-16 px-4">
+                <h1 class="text-5xl md:text-7xl font-extrabold" style="color: var(--text-headings);">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Your Privacy,</span> Your Control.
+                </h1>
+                <p class="mt-6 max-w-2xl mx-auto text-lg" style="color: var(--text-secondary);">
+                    Cipher Hub provides military-grade file encryption directly in your browser. Your files are never uploaded, never stored, and never seen by anyone but you. Total security, total simplicity.
+                </p>
+                <div class="mt-10">
+                    <a href="#dashboard" class="go-to-dashboard btn bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg text-lg">
+                        Encrypt a File Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page: Dashboard -->
+        <section id="page-dashboard" class="page hidden fade-in">
+            <!-- Dashboard content remains the same -->
+             <div class="main-card w-full max-w-xl mx-auto rounded-2xl shadow-2xl p-6 sm:p-8">
+                 <div class="text-center mb-6">
+                    <h2 class="text-3xl font-bold" style="color: var(--text-headings);">Dashboard</h2>
+                    <p style="color: var(--text-secondary);" class="mt-1">Encrypt & Decrypt your sensitive files.</p>
+                </div>
+                <div class="flex rounded-lg p-1 mb-6" style="background-color: var(--bg-input);">
+                    <button id="encrypt-tab-btn" class="tab-button w-1/2 p-2 rounded-md font-semibold">Encrypt</button>
+                    <button id="decrypt-tab-btn" class="tab-button w-1/2 p-2 rounded-md font-semibold">Decrypt</button>
+                </div>
+                <div id="content-area-inner">
+                    <div id="encrypt-view" class="space-y-6">
+                        <div>
+                            <label class="font-medium">Choose a file to encrypt</label>
+                            <div id="encrypt-file-preview" class="hidden mt-2 rounded-lg p-4 flex items-center space-x-4 border" style="background-color: var(--bg-input); border-color: var(--border-primary);">
+                                <div class="flex-shrink-0"><svg class="w-12 h-12" style="color: var(--text-secondary);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg></div>
+                                <div class="flex-grow min-w-0"><p id="encrypt-preview-name" class="text-sm font-medium truncate"></p><p id="encrypt-preview-size" class="text-xs" style="color: var(--text-secondary);"></p></div>
+                                <div class="flex-shrink-0"><button id="remove-encrypt-file" class="p-2 rounded-full transition-colors"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button></div>
+                            </div>
+                            <div id="encrypt-drop-area" class="mt-2 flex justify-center rounded-lg border-2 px-6 py-10 file-drop-area">
+                                <div class="text-center">
+                                    <svg class="mx-auto h-12 w-12" style="color: var(--text-secondary);" stroke="currentColor" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16v-2.333a3.333 3.333 0 013.333-3.334h1.334c1.105 0 2.063-.76 2.333-1.833.27-1.073 1.228-1.833 2.333-1.833h2.334c1.105 0 2.063.76 2.333 1.833.27 1.073 1.228 1.833 2.333 1.833h1.334A3.333 3.333 0 0120 13.667V16m-16 0a3.333 3.333 0 003.333 3.333h1.334c1.105 0 2.063-.76 2.333 1.833.27 1.073 1.228 1.833 2.333 1.833h2.334c1.105 0 2.063-.76 2.333-1.833.27 1.073 1.228 1.833 2.333-1.833h1.334A3.333 3.333 0 0020 16m-16 0h16"></path></svg>
+                                    <div class="mt-4 flex text-sm"><label for="encrypt-file-input-real" class="relative cursor-pointer rounded-md font-semibold" style="color: var(--text-link);"><span >Upload a file</span><input id="encrypt-file-input-real" type="file" class="sr-only"></label><p class="pl-1" style="color: var(--text-secondary);">or drag and drop</p></div>
+                                    <p class="text-xs" style="color: var(--text-secondary);">Any file type, up to 1GB</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button id="encrypt-btn" class="btn w-full bg-blue-600 hover:bg-blue-700 p-3 rounded-lg font-semibold text-lg text-white">Encrypt File</button>
+                    </div>
+                    <div id="decrypt-view" class="hidden space-y-6">
+                         <div>
+                            <label class="font-medium">Choose a file to decrypt (.encrypted)</label>
+                            <div id="decrypt-file-preview" class="hidden mt-2 rounded-lg p-4 flex items-center space-x-4 border" style="background-color: var(--bg-input); border-color: var(--border-primary);">
+                                <div class="flex-shrink-0"><svg class="w-12 h-12" style="color: var(--text-secondary);" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg></div>
+                                <div class="flex-grow min-w-0"><p id="decrypt-preview-name" class="text-sm font-medium truncate"></p><p id="decrypt-preview-size" class="text-xs" style="color: var(--text-secondary);"></p></div>
+                                <div class="flex-shrink-0"><button id="remove-decrypt-file" class="p-2 rounded-full transition-colors"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button></div>
+                            </div>
+                            <div id="decrypt-drop-area" class="mt-2 flex justify-center rounded-lg border-2 px-6 py-10 file-drop-area">
+                                <div class="text-center">
+                                    <svg class="mx-auto h-12 w-12" style="color: var(--text-secondary);" stroke="currentColor" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                                    <div class="mt-4 flex text-sm"><label for="decrypt-file-input-real" class="relative cursor-pointer rounded-md font-semibold" style="color: var(--text-link);"><span >Upload a file</span><input id="decrypt-file-input-real" type="file" class="sr-only"></label><p class="pl-1" style="color: var(--text-secondary);">or drag and drop</p></div>
+                                    <p class="text-xs" style="color: var(--text-secondary);">Must be a .encrypted file</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="key-input" class="font-medium">Encryption Key</label>
+                            <textarea id="key-input" rows="3" class="mt-2 w-full border rounded-lg p-2 outline-none transition" style="background-color: var(--bg-input); border-color: var(--border-primary);"></textarea>
+                        </div>
+                        <button id="decrypt-btn" class="btn w-full bg-emerald-600 hover:bg-emerald-700 p-3 rounded-lg font-semibold text-lg text-white">Decrypt File</button>
+                    </div>
+                </div>
+                <div id="status-area" class="mt-6 text-center space-y-4"></div>
+            </div>
+        </section>
+
+        <!-- Page: About -->
+        <section id="page-about" class="page hidden fade-in">
+             <div class="main-card max-w-4xl mx-auto rounded-2xl p-6 sm:p-10 prose">
+                <!-- About content remains the same -->
+                 <h2>About Cipher Hub</h2>
+                <p>Cipher Hub is a modern, secure, and user-friendly file encryption tool designed for everyone. Our mission is to provide privacy and peace of mind by making high-grade encryption accessible without requiring technical expertise. Whether you're a journalist protecting a source, a business professional safeguarding sensitive documents, or an individual securing personal files, Cipher Hub has you covered.</p>
+                <h3>Your Security is Our Priority</h3>
+                <p>The most important feature of Cipher Hub is its <strong>on-device security model</strong>. Unlike other services that require you to upload your files to a server, all encryption and decryption processes happen directly within your browser on your own computer. Your files are never transmitted, never stored, and never seen by us. You hold the keys, and you have total control.</p>
+                <h3>The Technology: AES-GCM</h3>
+                <p>We utilize the <strong>Advanced Encryption Standard (AES) in Galois/Counter Mode (GCM)</strong>, the same technology trusted by governments and corporations worldwide to protect classified information. AES-GCM provides both confidentiality and data integrity, meaning your files are not only unreadable to unauthorized parties but also protected from tampering. With a 256-bit key length, the number of possible keys is astronomically large, making brute-force attacks practically impossible with current technology.</p>
+                <h3>Frequently Asked Questions (FAQ)</h3>
+                <dl class="space-y-6 mt-4">
+                    <div>
+                        <dt class="font-semibold">What happens if I lose my encryption key?</dt>
+                        <dd class="mt-1">Because of our privacy-first design, we have no access to your keys. If a key is lost, there is unfortunately no way to recover the encrypted file. It is <strong>critically important</strong> to store your keys in a secure location, like a password manager.</dd>
+                    </div>
+                    <div>
+                        <dt class="font-semibold">Is there a file size limit?</dt>
+                        <dd class="mt-1">While the Web Crypto API is very efficient, performance can depend on your computer's resources. We have tested with files up to 1GB, but we recommend encrypting extremely large files with dedicated desktop software. For most documents, images, and videos, Cipher Hub is more than capable.</dd>
+                    </div>
+                    <div>
+                        <dt class="font-semibold">Can I use this on my phone?</dt>
+                        <dd class="mt-1">Yes! Cipher Hub is a fully responsive web application that works on modern browsers across desktops, tablets, and smartphones.</dd>
+                    </div>
+                </dl>
+             </div>
+        </section>
+
+        <!-- Page: Stats -->
+        <section id="page-stats" class="page hidden fade-in">
+            <div class="main-card max-w-4xl mx-auto rounded-2xl p-6 sm:p-10">
+                <!-- Stats content remains the same -->
+                <h2 class="text-3xl font-bold" style="color: var(--text-headings);">Usage Statistics</h2>
+                <p class="mb-8" style="color: var(--text-secondary);">This data is stored locally in your browser and is never shared. It's just for you!</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-6 rounded-lg border text-center" style="background-color: var(--bg-input); border-color: var(--border-primary);">
+                        <p class="text-lg text-blue-400 font-semibold">Files Encrypted</p>
+                        <p id="encrypted-count" class="text-5xl font-bold mt-2" style="color: var(--text-headings);">0</p>
+                    </div>
+                    <div class="p-6 rounded-lg border text-center" style="background-color: var(--bg-input); border-color: var(--border-primary);">
+                         <p class="text-lg text-emerald-400 font-semibold">Files Decrypted</p>
+                        <p id="decrypted-count" class="text-5xl font-bold mt-2" style="color: var(--text-headings);">0</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page: Contact -->
+        <section id="page-contact" class="page hidden fade-in">
+            <div class="main-card max-w-2xl mx-auto rounded-2xl p-6 sm:p-10">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold" style="color: var(--text-headings);">Contact Us</h2>
+                    <p class="mt-2" style="color: var(--text-secondary);">Have a question or feedback? We'd love to hear from you.</p>
+                </div>
+                <form id="contact-form" class="mt-8 space-y-6">
+                    <!-- !! IMPORTANT !! Replace "YOUR_ACCESS_KEY_HERE" with your actual key from web3forms.com -->
+                    <input type="hidden" name="access_key" value="ba8aa5a3-c400-492d-a35f-60b50013f105">
+                    <input type="hidden" name="subject" value="New Contact Message from Cipher Hub">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <div>
+                        <label for="name" class="font-medium">Full Name</label>
+                        <input type="text" id="name" name="name" required class="mt-2 w-full border rounded-lg p-3 outline-none transition" style="background-color: var(--bg-input); border-color: var(--border-primary);">
+                    </div>
+                    <div>
+                        <label for="email" class="font-medium">Email Address</label>
+                        <input type="email" id="email" name="email" required class="mt-2 w-full border rounded-lg p-3 outline-none transition" style="background-color: var(--bg-input); border-color: var(--border-primary);">
+                    </div>
+                    <div>
+                        <label for="message" class="font-medium">Message</label>
+                        <textarea id="message" name="message" required rows="5" class="mt-2 w-full border rounded-lg p-3 outline-none transition" style="background-color: var(--bg-input); border-color: var(--border-primary);"></textarea>
+                    </div>
+                    <button type="submit" id="contact-submit-btn" class="btn w-full bg-blue-600 hover:bg-blue-700 p-3 rounded-lg font-semibold text-lg text-white">
+                        Send Message
+                    </button>
+                </form>
+                <div id="contact-status" class="mt-6 text-center"></div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- AI Explanation Modal (remains the same) -->
+    <div id="ai-modal" class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 z-50 fade-in">
+        <div class="main-card w-full max-w-2xl rounded-2xl shadow-2xl p-6 sm:p-8 relative">
+            <button id="close-ai-modal" class="absolute top-4 right-4 p-2 rounded-full"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+            <div id="ai-modal-content" class="space-y-4 max-h-[70vh] overflow-y-auto">
+                <h2 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">✨ Why Is This Secure?</h2>
+                <div id="ai-explanation"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>
+
